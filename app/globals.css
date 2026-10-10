@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-brand: var(--brand);
+  --color-brand-ink: var(--brand-ink);
+  --color-accent: var(--accent);
+  --color-surface: var(--surface);
+  --color-muted-line: var(--line);
+  --font-sans: var(--font-sans);
+  --font-display: var(--font-display);
+}
+
+/* ── Theme tokens. Switch via <html data-theme="...">. Edit here to rebrand. ── */
+:root,
+[data-theme="executive"] {
+  --background: #ffffff;
+  --foreground: #0f1b2d;
+  --brand: #0f2a4a;
+  --brand-ink: #ffffff;
+  --accent: #0e7c7b;
+  --accent-soft: #e0f2f1;
+  --surface: #f4f6f9;
+  --line: #e2e8f0;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Fraunces", ui-serif, Georgia, serif;
+}
+
+[data-theme="warm"] {
+  --background: #fffdf9;
+  --foreground: #2b2118;
+  --brand: #7c2d12;
+  --brand-ink: #ffffff;
+  --accent: #c2703d;
+  --accent-soft: #fbeedd;
+  --surface: #faf3e8;
+  --line: #ead9c2;
+}
+
+[data-theme="modern"] {
+  --background: #ffffff;
+  --foreground: #191124;
+  --brand: #4c1d95;
+  --brand-ink: #ffffff;
+  --accent: #db2777;
+  --accent-soft: #fce7f3;
+  --surface: #f5f3ff;
+  --line: #e4defc;
+}
+
+[data-theme="mono"] {
+  --background: #ffffff;
+  --foreground: #111111;
+  --brand: #111111;
+  --brand-ink: #ffffff;
+  --accent: #555555;
+  --accent-soft: #f0f0f0;
+  --surface: #f7f7f7;
+  --line: #e5e5e5;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
