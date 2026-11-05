@@ -4,8 +4,10 @@ const isPages = process.env.GITHUB_PAGES === "true";
 const basePath = isPages ? "/mdl-site" : "";
 
 const nextConfig: NextConfig = {
-  cacheComponents: true,
-  partialPrefetching: true,
+  // Partial Prerendering (used by these two) can't run in static export mode,
+  // so only enable them for normal (non-Pages) builds.
+  cacheComponents: !isPages,
+  partialPrefetching: !isPages,
   turbopack: {
     rules: {
       "*.css": {
