@@ -27,7 +27,7 @@ function Headshot() {
   return (
     <div className="relative aspect-[4/5] w-full overflow-hidden rounded-3xl border border-[var(--line)] bg-[var(--surface)]">
       <Image
-        src="/headshot.jpg"
+        src={`${process.env.NEXT_PUBLIC_BASE_PATH}/headshot.jpg`}
         alt={site.name}
         fill
         sizes="(max-width: 768px) 100vw, 420px"
