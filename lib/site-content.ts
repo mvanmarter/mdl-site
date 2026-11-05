@@ -21,19 +21,26 @@ export const stats = [
   { value: "+77%", label: "Med-tech revenue growth" },
 ] as const;
 
-export const brands = [
-  "Warner Bros.",
-  "Disney / ABC",
-  "Sony Pictures",
-  "CBS",
-  "CNN",
-  "Discovery",
-  "HSN",
-  "Kraft",
-  "Nestlé",
-  "GSN",
-  "G4",
-] as const;
+/**
+ * Logos live in public/brands/. Each SVG is pre-cropped to its artwork's
+ * bounds and normalized to a 100-unit height, so `width` is the intrinsic
+ * width at that height (i.e. aspect ratio × 100).
+ */
+export type Brand = { name: string; logo?: { src: string; width: number } };
+
+export const brands: Brand[] = [
+  { name: "Warner Bros.", logo: { src: "/brands/warner-bros.svg", width: 104 } },
+  { name: "Disney / ABC", logo: { src: "/brands/disney-abc.svg", width: 381 } },
+  { name: "Sony Pictures", logo: { src: "/brands/sony-pictures.svg", width: 90 } },
+  { name: "CBS", logo: { src: "/brands/cbs.svg", width: 100 } },
+  { name: "CNN", logo: { src: "/brands/cnn.svg", width: 210 } },
+  { name: "Discovery", logo: { src: "/brands/discovery.svg", width: 483 } },
+  { name: "HSN", logo: { src: "/brands/hsn.svg", width: 99 } },
+  { name: "Kraft", logo: { src: "/brands/kraft.svg", width: 299 } },
+  { name: "Nestlé", logo: { src: "/brands/nestle.svg", width: 372 } },
+  { name: "GSN", logo: { src: "/brands/gsn.svg", width: 100 } },
+  { name: "G4", logo: { src: "/brands/g4.svg", width: 78 } },
+];
 
 export const expertise = [
   {

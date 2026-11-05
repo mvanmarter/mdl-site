@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Award, GraduationCap, Quote } from "lucide-react";
 import {
   brands,
@@ -18,11 +19,31 @@ export function BrandStrip() {
         <p className="text-center text-xs font-bold uppercase tracking-[0.2em] text-[var(--foreground)]/50">
           Consumer, media & tech brands led
         </p>
-        <div className="mt-4 flex flex-wrap items-center justify-center gap-2">
+        <ul className="mt-6 flex flex-wrap items-stretch justify-center gap-x-5 gap-y-4">
           {brands.map((b) => (
-            <Badge key={b}>{b}</Badge>
+            <li
+              key={b.name}
+              className="flex items-center gap-3 rounded-xl border border-[var(--line)] bg-white py-2.5 pl-3 pr-4 shadow-[0_1px_2px_rgba(15,27,45,0.06)] transition duration-200 hover:-translate-y-0.5 hover:border-[var(--accent)]/40 hover:shadow-[0_6px_16px_rgba(15,27,45,0.08)]"
+            >
+              {b.logo ? (
+                <>
+                  <Image
+                    src={`${process.env.NEXT_PUBLIC_BASE_PATH}${b.logo.src}`}
+                    alt=""
+                    width={b.logo.width}
+                    height={100}
+                    unoptimized
+                    className="h-7 w-auto max-w-none"
+                  />
+                  <span aria-hidden className="h-6 w-px bg-[var(--line)]" />
+                </>
+              ) : null}
+              <span className="whitespace-nowrap text-sm font-semibold tracking-tight text-[var(--foreground)]/80">
+                {b.name}
+              </span>
+            </li>
           ))}
-        </div>
+        </ul>
       </div>
     </section>
   );
