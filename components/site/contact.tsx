@@ -52,6 +52,7 @@ export function Footer() {
           © 2026 {site.name} · {site.location}
         </p>
         <p>
+          <a href="/design/designs1.html">Designs 1</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/design/designs2.html">Designs 2</a>&nbsp;&nbsp;|&nbsp;&nbsp;
           Content adapted from public LinkedIn profile ·{" "}
           <a className="underline" href={site.linkedin}>
             Source
