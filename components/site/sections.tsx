@@ -192,7 +192,7 @@ export function Experience() {
         <SectionHeading
           eyebrow="Experience"
           title="25+ years from consulting to VP"
-          lede="Full history in LinkedIn PDF. Highlights below — contact for resume."
+          lede="Full history in LinkedIn. Highlights below — contact for resume."
         />
         <ol className="mt-8 space-y-4">
           {experience.map((r) => (
