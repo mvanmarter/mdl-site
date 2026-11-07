@@ -1,75 +1,261 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Melanie de Leon — Design Directions 1</title>
-<style>
-*{box-sizing:border-box}
-html,body{height:100%;margin:0}
-body{display:flex;flex-direction:column;background:#f5f4ef;color:#1f1e1d;font:14px/1.4 system-ui,-apple-system,"Segoe UI",sans-serif}
-header{position:sticky;top:0;z-index:10;flex:none;display:flex;align-items:center;gap:16px;padding:0 16px;height:48px;background:#1f1e1d;color:#f5f4ef}
-.set{flex:none;display:flex;gap:4px;align-items:center;font-size:12px;opacity:.9}
-.set a{color:inherit;text-decoration:none;padding:4px 8px;border-radius:4px;border:1px solid #55524e}
-.set a[aria-current]{background:#f5f4ef;color:#1f1e1d;border-color:#f5f4ef}
-nav{flex:1;min-width:0;display:flex;gap:2px;overflow-x:auto;scrollbar-width:thin}
-nav a{flex:none;display:flex;align-items:center;gap:6px;padding:6px 10px;border-radius:6px;color:#c9c6bf;text-decoration:none;white-space:nowrap}
-nav a b{font-weight:600;font-variant-numeric:tabular-nums}
-nav a span{display:none}
-nav a:hover{background:#34322f;color:#fff}
-nav a[aria-current]{background:#f5f4ef;color:#1f1e1d}
-nav a[aria-current] span{display:inline}
-.open{flex:none;color:#c9c6bf;font-size:12px;text-decoration:none}
-.open:hover{color:#fff}
-iframe{flex:1;width:100%;border:0;background:#fff;display:block}
-@media (max-width:640px){.set,.open{display:none}}
-</style>
-</head>
-<body>
-<header>
-  <div class="set"><a href="designs1.html" aria-current="page">Set 1</a><a href="designs2.html">Set 2</a><a href="designs3.html">Set 3</a></div>
-  <nav aria-label="Design directions">
-      <a href="designs1/01-centered-column.html" data-n="01" title="Centered column (ref: Jonathan Stark)"><b>01</b><span>Centered column</span></a>
-      <a href="designs1/02-sidebar-journal.html" data-n="02" title="Sidebar journal (ref: Tom Critchlow)"><b>02</b><span>Sidebar journal</span></a>
-      <a href="designs1/03-dark-editorial.html" data-n="03" title="Dark editorial (ref: Laura Busche)"><b>03</b><span>Dark editorial</span></a>
-      <a href="designs1/04-outline-neon.html" data-n="04" title="Outline neon (ref: Kevin Indig)"><b>04</b><span>Outline neon</span></a>
-      <a href="designs1/05-stage-orange.html" data-n="05" title="Stage &amp; orange (ref: April Dunford)"><b>05</b><span>Stage &amp; orange</span></a>
-      <a href="designs1/06-slate-minimal.html" data-n="06" title="Slate minimal (ref: Andy Raskin)"><b>06</b><span>Slate minimal</span></a>
-      <a href="designs1/07-newsletter-letter.html" data-n="07" title="Newsletter letter (ref: Wes Kao)"><b>07</b><span>Newsletter letter</span></a>
-      <a href="designs1/08-framed-bold.html" data-n="08" title="Framed bold (ref: Brendan Hufford)"><b>08</b><span>Framed bold</span></a>
-      <a href="designs1/09-noir-expert.html" data-n="09" title="Noir expert (ref: Jeremy Malcolm)"><b>09</b><span>Noir expert</span></a>
-      <a href="designs1/10-big-statement.html" data-n="10" title="Big statement (ref: Ninia Azzopardi)"><b>10</b><span>Big statement</span></a>
-      <a href="designs1/11-saas-launch.html" data-n="11" title="SaaS launch (ref: Josh Fechter)"><b>11</b><span>SaaS launch</span></a>
-      <a href="designs1/12-italic-serif.html" data-n="12" title="Italic serif (ref: Dara Denney)"><b>12</b><span>Italic serif</span></a>
-  </nav>
-  <a class="open" id="open" href="designs1/01-centered-column.html" target="_blank" rel="noopener">Open standalone ↗</a>
-</header>
-<iframe id="view" title="Design direction" src="designs1/01-centered-column.html"></iframe>
-<script>
-(function(){
-  var links=[].slice.call(document.querySelectorAll("nav a")),
-      view=document.getElementById("view"),open=document.getElementById("open");
-  function show(n,replace){
-    var a=links.filter(function(l){return l.dataset.n===n})[0]||links[0];
-    links.forEach(function(l){l===a?l.setAttribute("aria-current","page"):l.removeAttribute("aria-current")});
-    var href=a.getAttribute("href");
-    if(view.getAttribute("src")!==href)view.setAttribute("src",href);
-    open.setAttribute("href",href);
-    document.title=a.dataset.n+" · "+a.title+" — Melanie de Leon";
-    a.scrollIntoView({block:"nearest",inline:"center"});
-    var h="#"+a.dataset.n;
-    if(location.hash!==h)history[replace?"replaceState":"pushState"](null,"",h);
-  }
-  links.forEach(function(l){l.addEventListener("click",function(e){e.preventDefault();show(l.dataset.n)})});
-  window.addEventListener("hashchange",function(){show(location.hash.slice(1))});
-  document.addEventListener("keydown",function(e){
-    if(e.altKey||e.ctrlKey||e.metaKey||e.shiftKey)return;
-    var i=links.findIndex(function(l){return l.hasAttribute("aria-current")});
-    if(e.key==="ArrowRight"&&i<links.length-1)show(links[i+1].dataset.n);
-    if(e.key==="ArrowLeft"&&i>0)show(links[i-1].dataset.n);
-  });
-  show(location.hash.slice(1)||links[0].dataset.n,true);
-})();
-</script>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Melanie de Leon — Design Directions 1</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+        background: #f5f4ef;
+        color: #1f1e1d;
+        font:
+          14px/1.4 system-ui,
+          -apple-system,
+          "Segoe UI",
+          sans-serif;
+      }
+      header {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        flex: none;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        padding: 0 16px;
+        height: 48px;
+        background: #1f1e1d;
+        color: #f5f4ef;
+      }
+      .set {
+        flex: none;
+        display: flex;
+        gap: 4px;
+        align-items: center;
+        font-size: 12px;
+        opacity: 0.9;
+      }
+      .set a {
+        color: inherit;
+        text-decoration: none;
+        padding: 4px 8px;
+        border-radius: 4px;
+        border: 1px solid #55524e;
+      }
+      .set a[aria-current] {
+        background: #f5f4ef;
+        color: #1f1e1d;
+        border-color: #f5f4ef;
+      }
+      nav {
+        flex: 1;
+        min-width: 0;
+        display: flex;
+        gap: 2px;
+        overflow-x: auto;
+        scrollbar-width: thin;
+      }
+      nav a {
+        flex: none;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        padding: 6px 10px;
+        border-radius: 6px;
+        color: #c9c6bf;
+        text-decoration: none;
+        white-space: nowrap;
+      }
+      nav a b {
+        font-weight: 600;
+        font-variant-numeric: tabular-nums;
+      }
+      nav a span {
+        display: none;
+      }
+      nav a:hover {
+        background: #34322f;
+        color: #fff;
+      }
+      nav a[aria-current] {
+        background: #f5f4ef;
+        color: #1f1e1d;
+      }
+      nav a[aria-current] span {
+        display: inline;
+      }
+      .open {
+        flex: none;
+        color: #c9c6bf;
+        font-size: 12px;
+        text-decoration: none;
+      }
+      .open:hover {
+        color: #fff;
+      }
+      iframe {
+        flex: 1;
+        width: 100%;
+        border: 0;
+        background: #fff;
+        display: block;
+      }
+      @media (max-width: 640px) {
+        .set,
+        .open {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="set">
+        <a href="designs1.html" aria-current="page">Set 1</a
+        ><a href="designs2.html">Set 2</a><a href="designs3.html">Set 3</a>
+      </div>
+      <nav aria-label="Design directions">
+        <a
+          href="designs1/01-centered-column.html"
+          data-n="01"
+          title="Centered column (ref: Jonathan Stark)"
+          ><b>01</b><span>Centered column</span></a
+        >
+        <a
+          href="designs1/02-sidebar-journal.html"
+          data-n="02"
+          title="Sidebar journal (ref: Tom Critchlow)"
+          ><b>02</b><span>Sidebar journal</span></a
+        >
+        <a
+          href="designs1/03-dark-editorial.html"
+          data-n="03"
+          title="Dark editorial (ref: Laura Busche)"
+          ><b>03</b><span>Dark editorial</span></a
+        >
+        <a
+          href="designs1/04-outline-neon.html"
+          data-n="04"
+          title="Outline neon (ref: Kevin Indig)"
+          ><b>04</b><span>Outline neon</span></a
+        >
+        <a
+          href="designs1/05-stage-orange.html"
+          data-n="05"
+          title="Stage &amp; orange (ref: April Dunford)"
+          ><b>05</b><span>Stage &amp; orange</span></a
+        >
+        <a
+          href="designs1/06-slate-minimal.html"
+          data-n="06"
+          title="Slate minimal (ref: Andy Raskin)"
+          ><b>06</b><span>Slate minimal</span></a
+        >
+        <a
+          href="designs1/07-newsletter-letter.html"
+          data-n="07"
+          title="Newsletter letter (ref: Wes Kao)"
+          ><b>07</b><span>Newsletter letter</span></a
+        >
+        <a
+          href="designs1/08-framed-bold.html"
+          data-n="08"
+          title="Framed bold (ref: Brendan Hufford)"
+          ><b>08</b><span>Framed bold</span></a
+        >
+        <a
+          href="designs1/09-noir-expert.html"
+          data-n="09"
+          title="Noir expert (ref: Jeremy Malcolm)"
+          ><b>09</b><span>Noir expert</span></a
+        >
+        <a
+          href="designs1/10-big-statement.html"
+          data-n="10"
+          title="Big statement (ref: Ninia Azzopardi)"
+          ><b>10</b><span>Big statement</span></a
+        >
+        <a
+          href="designs1/11-saas-launch.html"
+          data-n="11"
+          title="SaaS launch (ref: Josh Fechter)"
+          ><b>11</b><span>SaaS launch</span></a
+        >
+        <a
+          href="designs1/12-italic-serif.html"
+          data-n="12"
+          title="Italic serif (ref: Dara Denney)"
+          ><b>12</b><span>Italic serif</span></a
+        >
+      </nav>
+      <a
+        class="open"
+        id="open"
+        href="designs1/01-centered-column.html"
+        target="_blank"
+        rel="noopener"
+        >Open standalone ↗</a
+      >
+    </header>
+    <iframe
+      id="view"
+      title="Design direction"
+      src="designs1/01-centered-column.html"
+    ></iframe>
+    <script>
+      (function () {
+        var links = [].slice.call(document.querySelectorAll("nav a")),
+          view = document.getElementById("view"),
+          open = document.getElementById("open");
+        function show(n, replace) {
+          var a =
+            links.filter(function (l) {
+              return l.dataset.n === n;
+            })[0] || links[0];
+          links.forEach(function (l) {
+            l === a
+              ? l.setAttribute("aria-current", "page")
+              : l.removeAttribute("aria-current");
+          });
+          var href = a.getAttribute("href");
+          if (view.getAttribute("src") !== href) view.setAttribute("src", href);
+          open.setAttribute("href", href);
+          document.title = a.dataset.n + " · " + a.title + " — Melanie de Leon";
+          a.scrollIntoView({ block: "nearest", inline: "center" });
+          var h = "#" + a.dataset.n;
+          if (location.hash !== h)
+            history[replace ? "replaceState" : "pushState"](null, "", h);
+        }
+        links.forEach(function (l) {
+          l.addEventListener("click", function (e) {
+            e.preventDefault();
+            show(l.dataset.n);
+          });
+        });
+        window.addEventListener("hashchange", function () {
+          show(location.hash.slice(1));
+        });
+        document.addEventListener("keydown", function (e) {
+          if (e.altKey || e.ctrlKey || e.metaKey || e.shiftKey) return;
+          var i = links.findIndex(function (l) {
+            return l.hasAttribute("aria-current");
+          });
+          if (e.key === "ArrowRight" && i < links.length - 1)
+            show(links[i + 1].dataset.n);
+          if (e.key === "ArrowLeft" && i > 0) show(links[i - 1].dataset.n);
+        });
+        show(location.hash.slice(1) || links[0].dataset.n, true);
+      })();
+    </script>
+  </body>
 </html>
