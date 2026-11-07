@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { Archivo_Black, Playfair_Display, Roboto } from "next/font/google";
 import { Award, GraduationCap, Quote } from "lucide-react";
 import {
   brands,
@@ -12,40 +13,83 @@ import {
 } from "@/lib/site-content";
 import { Badge, Card, SectionHeading } from "@/components/ui/primitives";
 
+const playfair = Playfair_Display({ subsets: ["latin"] });
+const archivoBlack = Archivo_Black({ subsets: ["latin"], weight: "400" });
+const roboto = Roboto({ subsets: ["latin"], weight: ["500", "700", "900"] });
+
+/** Per-brand type treatment, mirroring design 09 (lime & lavender). */
+const brandWordmarkStyles: Record<string, string> = {
+  "Warner Bros.": `${playfair.className} text-[24px]`,
+  "Disney / ABC": `${archivoBlack.className} text-[22px]`,
+  "Sony Pictures": "text-[22px] font-black tracking-[-0.5px]",
+  CBS: `${archivoBlack.className} text-[24px]`,
+  CNN: "text-[26px] font-black italic",
+  Discovery: "text-[22px] font-medium",
+  HSN: `${playfair.className} text-[24px]`,
+  Kraft: "text-[24px] font-black",
+  Nestlé: `${playfair.className} text-[22px]`,
+  GSN: "text-[22px] font-bold",
+  G4: `${archivoBlack.className} text-[22px]`,
+};
+
 export function BrandStrip() {
   return (
-    <section aria-label="Brands" className="border-b border-[var(--line)]">
-      <div className="mx-auto max-w-6xl px-4 py-8 sm:px-6">
-        <p className="text-center text-xs font-bold uppercase tracking-[0.2em] text-[var(--foreground)]/50">
-          Consumer, media & tech brands led
-        </p>
-        <ul className="mt-6 flex flex-wrap items-stretch justify-center gap-x-5 gap-y-4">
-          {brands.map((b) => (
-            <li
-              key={b.name}
-              className="flex items-center gap-3 rounded-xl border border-[var(--line)] bg-white py-2.5 pl-3 pr-4 shadow-[0_1px_2px_rgba(15,27,45,0.06)] transition duration-200 hover:-translate-y-0.5 hover:border-[var(--accent)]/40 hover:shadow-[0_6px_16px_rgba(15,27,45,0.08)]"
-            >
-              {b.logo ? (
-                <>
-                  <Image
-                    src={`${process.env.NEXT_PUBLIC_BASE_PATH}${b.logo.src}`}
-                    alt=""
-                    width={b.logo.width}
-                    height={100}
-                    unoptimized
-                    className="h-7 w-auto max-w-none"
-                  />
-                  <span aria-hidden className="h-6 w-px bg-[var(--line)]" />
-                </>
-              ) : null}
-              <span className="whitespace-nowrap text-sm font-semibold tracking-tight text-[var(--foreground)]/80">
+    <>
+      {/* <section aria-label="Brands" className="border-b border-[var(--line)]">
+        <div className="mx-auto max-w-6xl px-4 py-8 sm:px-6">
+          <p className="text-center text-xs font-bold uppercase tracking-[0.2em] text-[var(--foreground)]/50">
+            Consumer, media & tech brands
+          </p>
+          <ul className="mt-6 flex flex-wrap items-stretch justify-center gap-x-5 gap-y-4">
+            {brands.map((b) => (
+              <li
+                key={b.name}
+                className="flex items-center gap-3 rounded-xl border border-[var(--line)] bg-white py-2.5 pl-3 pr-4 shadow-[0_1px_2px_rgba(15,27,45,0.06)] transition duration-200 hover:-translate-y-0.5 hover:border-[var(--accent)]/40 hover:shadow-[0_6px_16px_rgba(15,27,45,0.08)]"
+              >
+                {b.logo ? (
+                  <>
+                    <Image
+                      src={`${process.env.NEXT_PUBLIC_BASE_PATH}${b.logo.src}`}
+                      alt=""
+                      width={b.logo.width}
+                      height={100}
+                      unoptimized
+                      className="h-7 w-auto max-w-none"
+                    />
+                    <span aria-hidden className="h-6 w-px bg-[var(--line)]" />
+                  </>
+                ) : null}
+                <span className="whitespace-nowrap text-sm font-semibold tracking-tight text-[var(--foreground)]/80">
+                  {b.name}
+                </span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section> */}
+      <section
+        aria-label="Brands (wordmarks)"
+        className="border-b border-[var(--line)]"
+      >
+        <div className="mx-auto max-w-[1200px] px-4 py-10 md:py-14 text-center sm:px-8">
+          <p className="mb-[22px] text-[12px] font-bold uppercase leading-[1.65] tracking-[1.5px] text-[var(--foreground)]/50">
+            Consumer, media & tech brands
+          </p>
+          <ul
+            className={`${roboto.className} flex flex-wrap items-center justify-center gap-x-[44px] gap-y-[16px] leading-[1.65] text-[#111111]`}
+          >
+            {brands.map((b) => (
+              <li
+                key={b.name}
+                className={`whitespace-nowrap ${brandWordmarkStyles[b.name] ?? "text-[22px] font-bold"}`}
+              >
                 {b.name}
-              </span>
-            </li>
-          ))}
-        </ul>
-      </div>
-    </section>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+    </>
   );
 }
 
@@ -188,11 +232,7 @@ export function Testimonials() {
         <div className="mt-8 grid gap-4 md:grid-cols-2">
           {testimonials.map((t) => (
             <Card key={t.name}>
-              <Quote
-                className="text-[var(--accent)]"
-                size={24}
-                aria-hidden
-              />
+              <Quote className="text-[var(--accent)]" size={24} aria-hidden />
               <blockquote className="mt-3 text-[15px] leading-relaxed text-[var(--foreground)]/80">
                 “{t.quote}”
               </blockquote>
