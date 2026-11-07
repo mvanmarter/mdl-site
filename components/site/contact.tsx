@@ -52,12 +52,25 @@ export function Footer() {
           © 2026 {site.name} · {site.location}
         </p>
         <p>
-          <a href="/mdl-site/design/designs1.html" target="_blank">
+          <a
+            href={`${process.env.NEXT_PUBLIC_BASE_PATH}/design/designs1.html`}
+            target="_blank"
+          >
             Designs 1
           </a>
           &nbsp;&nbsp;|&nbsp;&nbsp;
-          <a href="/mdl-site/design/designs2.html" target="_blank">
+          <a
+            href={`${process.env.NEXT_PUBLIC_BASE_PATH}/design/designs2.html`}
+            target="_blank"
+          >
             Designs 2
+          </a>
+          &nbsp;&nbsp;|&nbsp;&nbsp;
+          <a
+            href={`${process.env.NEXT_PUBLIC_BASE_PATH}/design/designs3.html`}
+            target="_blank"
+          >
+            Designs 3
           </a>
           &nbsp;&nbsp;|&nbsp;&nbsp; Content adapted from public LinkedIn profile
           ·{" "}

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<title>S3-07 · Raspberry masthead</title>
+<script src="../assets/dc-runtime-a40c333009.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&amp;family=Merriweather:wght@300;400&amp;family=Raleway:wght@500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#ffffff}
+a{color:#8E2D4D}a:hover{color:#5C1A30}
+</style>
+</helmet>
+<div style="font-family: Merriweather, Georgia, serif; color: #2A2A2A; background: #ffffff; font-size: 16px; line-height: 1.8; font-weight: 300">
+  <div style="background: #000000; color: #ffffff; padding: 10px 32px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; font-family: Raleway, sans-serif; font-size: 11px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase">
+    <a href="mailto:deleon.melanie@gmail.com" style="color: #ffffff; text-decoration: none">Email Melanie</a>
+    <span>Los Angeles Metropolitan Area</span>
+  </div>
+
+  <header style="text-align: center; padding: 56px 24px 20px">
+    <h1 style="margin: 0; font-family: 'Playfair Display', Georgia, serif; font-weight: 500; font-size: 104px; line-height: 1; letter-spacing: 1px; color: #9E3557">Melanie de Leon</h1>
+    <div style="display: flex; align-items: center; gap: 14px; max-width: 760px; margin: 14px auto 0">
+      <span aria-hidden="true" style="flex: 1; height: 1px; background: #F0C9B6"></span>
+      <span style="font-size: 13px; color: #6B6B6B">VP Marketing &amp; Product · AI-driven go-to-market</span>
+      <span aria-hidden="true" style="flex: 1; height: 1px; background: #F0C9B6"></span>
+    </div>
+    <nav aria-label="Primary" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 18px 52px; margin: 64px auto 0; max-width: 900px; font-family: Raleway, sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 1.8px; text-transform: uppercase">
+      <a href="#expertise" style="color: #1A1A1A; text-decoration: none">What she brings</a>
+      <a href="#impact" style="color: #1A1A1A; text-decoration: none">Selected impact</a>
+      <a href="#experience" style="color: #1A1A1A; text-decoration: none">Experience</a>
+      <a href="#contact" style="color: #1A1A1A; text-decoration: none">Hire me</a>
+      <a href="#praise" style="color: #1A1A1A; text-decoration: none">Recommendations</a>
+    </nav>
+  </header>
+
+  <div style="max-width: 1180px; margin: 0 auto; padding: 48px 32px 80px; display: flex; flex-wrap: wrap; gap: 40px 48px; align-items: flex-start">
+    <main style="flex: 999 1 620px; min-width: 0">
+      <section style="text-align: center; padding-bottom: 40px; border-bottom: 1px solid #EFE6E1">
+        <p style="margin: 0 0 6px; font-family: Raleway, sans-serif; font-size: 11px; font-weight: 600; letter-spacing: 1.2px; text-transform: uppercase; color: #6B6B6B">Open to VP Marketing / VP Product — <a href="#about">about</a>, <a href="#contact">contact</a></p>
+        <h2 style="margin: 0 0 14px; font-family: 'Playfair Display', Georgia, serif; font-style: italic; font-weight: 400; font-size: 36px; line-height: 1.25; color: #9E3557">Strategic, Analytical, and Creative — Focused on What Matters</h2>
+        <p style="margin: 0 auto; max-width: 640px">Product marketing and growth leader helping SaaS, emerging tech, digital media, and Fortune 500 consumer companies build AI-driven go-to-market engines that connect product, customer insight, and revenue outcomes.</p>
+      </section>
+
+      <section id="impact" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr)); gap: 40px 36px; padding: 40px 0; border-bottom: 1px solid #EFE6E1">
+        <sc-for list="{{impact}}" as="i" hint-placeholder-count="4">
+          <article style="text-align: center">
+            <p style="margin: 0 0 4px; font-family: Raleway, sans-serif; font-size: 11px; font-weight: 600; letter-spacing: 1.2px; text-transform: uppercase; color: #6B6B6B">{{i.m}} — Selected impact</p>
+            <h3 style="margin: 0 0 10px; font-family: 'Playfair Display', Georgia, serif; font-style: italic; font-weight: 400; font-size: 28px; line-height: 1.25; color: #9E3557">{{i.l}}</h3>
+            <p style="margin: 0; font-size: 15px">{{i.d}}</p>
+          </article>
+        </sc-for>
+      </section>
+
+      <section id="about" style="padding: 40px 0; border-bottom: 1px solid #EFE6E1">
+        <p style="margin: 0 0 16px">A rare combination of product marketing, growth leadership, and hands-on product strategy. Melanie embeds PLG and lifecycle optimization directly into the product experience and translates complex tech into clear value props.</p>
+        <p style="margin: 0 0 16px">Tenacious problem-solver who cuts through noise, focuses teams on outcomes, and rolls up her sleeves. Equally at home with Product, Engineering, Sales, and Operations.</p>
+        <p style="margin: 0 0 18px">Through-line: digital product innovation — how breakthrough products are positioned, experienced, and adopted. Now focused on helping AI-driven products grow in signal-constrained ecosystems where precision, experimentation, and storytelling must work together.</p>
+        <p style="margin: 0; font-family: Raleway, sans-serif; font-size: 11px; font-weight: 600; letter-spacing: 1.2px; text-transform: uppercase; color: #6B6B6B; text-align: center">Consumer Product Marketing, Media Buying, Social Media Optimization, PLG, Lifecycle, GTM Strategy, MarTech, MMM</p>
+      </section>
+
+      <section id="expertise" style="padding: 40px 0; border-bottom: 1px solid #EFE6E1">
+        <h2 style="margin: 0 0 28px; font-family: 'Playfair Display', Georgia, serif; font-style: italic; font-weight: 400; font-size: 34px; color: #9E3557; text-align: center">What She Brings to a VP Role</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr)); gap: 28px 36px">
+          <sc-for list="{{expertise}}" as="e" hint-placeholder-count="6"><div><h3 style="margin: 0 0 4px; font-family: Raleway, sans-serif; font-weight: 700; font-size: 13px; letter-spacing: 1.2px; text-transform: uppercase">{{e.t}}</h3><p style="margin: 0; font-size: 15px">{{e.d}}</p></div></sc-for>
+        </div>
+      </section>
+
+      <section id="experience" style="padding: 40px 0">
+        <h2 style="margin: 0 0 4px; font-family: 'Playfair Display', Georgia, serif; font-style: italic; font-weight: 400; font-size: 34px; color: #9E3557; text-align: center">25+ Years from Consulting to VP</h2>
+        <p style="margin: 0 0 28px; text-align: center; font-size: 14px; color: #6B6B6B">Full history in LinkedIn PDF. Highlights below — contact for resume.</p>
+        <sc-for list="{{roles}}" as="r" hint-placeholder-count="7">
+          <article style="margin-bottom: 32px">
+            <p style="margin: 0; font-family: Raleway, sans-serif; font-size: 11px; font-weight: 600; letter-spacing: 1.2px; text-transform: uppercase; color: #6B6B6B">{{r.w}} — {{r.c}}</p>
+            <h3 style="margin: 2px 0 6px; font-family: 'Playfair Display', Georgia, serif; font-style: italic; font-weight: 400; font-size: 25px; line-height: 1.3; color: #9E3557">{{r.t}}</h3>
+            <ul style="margin: 0; padding-left: 20px; font-size: 15px"><sc-for list="{{r.b}}" as="x" hint-placeholder-count="2"><li>{{x}}</li></sc-for></ul>
+          </article>
+        </sc-for>
+      </section>
+    </main>
+
+    <aside style="flex: 1 1 280px; display: flex; flex-direction: column; gap: 24px">
+      <section style="border: 1px solid #DDDDDD; padding: 22px; text-align: center">
+        <img src="../assets/jpg-13bfa814f3.jpg" alt="Melanie de Leon" style="width: 100%; aspect-ratio: 1 / 1; object-fit: cover; display: block; margin-bottom: 14px">
+        <p style="margin: 0; font-family: Raleway, sans-serif; font-size: 11px; font-weight: 600; letter-spacing: 1.2px; text-transform: uppercase; color: #8E2D4D">Melanie de Leon</p>
+        <p style="margin: 4px 0 0; font-size: 14px">Product marketing &amp; growth leader · Los Angeles</p>
+      </section>
+      <section id="contact" style="border: 1px solid #DDDDDD; padding: 22px">
+        <h2 style="margin: 0 0 12px; font-family: Raleway, sans-serif; font-size: 11px; font-weight: 600; letter-spacing: 1.2px; text-transform: uppercase; color: #8E2D4D; text-align: center">Seeking VP Marketing / VP Product roles</h2>
+        <p style="margin: 0 0 10px; font-family: Raleway, sans-serif; font-weight: 700; font-size: 15px; line-height: 1.5">Let's talk about your next stage of growth</p>
+        <p style="margin: 0 0 10px; font-size: 14px">SaaS, marketplaces, emerging tech, and consumer platforms. AI-driven GTM, PLG, and lifecycle — with full revenue accountability.</p>
+        <p style="margin: 0 0 14px; font-size: 14px">Email is fastest. Based in Los Angeles Metropolitan Area.</p>
+        <a href="mailto:deleon.melanie@gmail.com" style="display: block; background: #6E6E6E; color: #ffffff; text-decoration: none; font-family: Raleway, sans-serif; font-size: 12px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; padding: 10px; text-align: center">Email</a>
+        <p style="margin: 12px 0 0; font-size: 14px; text-align: center"><a href="tel:+13107365993">310-736-5993</a><br><a href="https://www.linkedin.com/in/melaniedeleon">linkedin.com/in/melaniedeleon</a></p>
+      </section>
+      <section aria-label="Headline metrics" style="border: 1px solid #DDDDDD; padding: 22px; text-align: center">
+        <sc-for list="{{metrics}}" as="m" hint-placeholder-count="4"><div style="margin-bottom: 12px"><div style="font-family: 'Playfair Display', Georgia, serif; font-size: 26px; color: #9E3557; line-height: 1.2">{{m.v}}</div><div style="font-size: 13px">{{m.l}}</div></div></sc-for>
+      </section>
+      <section id="praise" style="border: 1px solid #DDDDDD; padding: 22px">
+        <h2 style="margin: 0 0 12px; font-family: Raleway, sans-serif; font-size: 11px; font-weight: 600; letter-spacing: 1.2px; text-transform: uppercase; color: #8E2D4D; text-align: center">Trusted by engineering and executive partners</h2>
+        <blockquote style="margin: 0 0 2px; font-family: 'Playfair Display', Georgia, serif; font-style: italic; font-size: 17px; line-height: 1.5">“From an engineering perspective she was one of my favorite cross-functional partners.”</blockquote>
+        <p style="margin: 0 0 12px; font-size: 12px">Jim Edelstein · Engineering partner · Platphorm, ~10 years</p>
+        <blockquote style="margin: 0 0 2px; font-family: 'Playfair Display', Georgia, serif; font-style: italic; font-size: 17px; line-height: 1.5">“Melanie raises the bar on clarity, accountability, and execution across complex teams.”</blockquote>
+        <p style="margin: 0 0 10px; font-size: 12px">Dan Sava · Cross-functional executive</p>
+        <p style="margin: 0; font-size: 12px; color: #6B6B6B">Sourced from public LinkedIn recommendations. <a href="https://www.linkedin.com/in/melaniedeleon">Full profile</a></p>
+      </section>
+      <section style="border: 1px solid #DDDDDD; padding: 22px">
+        <h2 style="margin: 0 0 10px; font-family: Raleway, sans-serif; font-size: 11px; font-weight: 600; letter-spacing: 1.2px; text-transform: uppercase; color: #8E2D4D; text-align: center">Consumer, media &amp; tech brands led</h2>
+        <p style="margin: 0; font-size: 14px; text-align: center">Warner Bros. · Disney/ABC · Sony Pictures · CBS · CNN · Discovery · HSN · Kraft · Nestlé · GSN · G4</p>
+      </section>
+      <section style="border: 1px solid #DDDDDD; padding: 22px">
+        <h2 style="margin: 0 0 10px; font-family: Raleway, sans-serif; font-size: 11px; font-weight: 600; letter-spacing: 1.2px; text-transform: uppercase; color: #8E2D4D; text-align: center">Foundation</h2>
+        <sc-for list="{{edu}}" as="d" hint-placeholder-count="3"><p style="margin: 0 0 8px; font-size: 14px"><strong style="font-weight: 400">{{d.t}}</strong><br>{{d.d}}</p></sc-for>
+      </section>
+    </aside>
+  </div>
+  <footer style="background: #000000; color: #D8D8D8; padding: 20px 32px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; font-family: Raleway, sans-serif; font-size: 12px; letter-spacing: 0.5px">
+    <span>© 2026 Melanie de Leon · Los Angeles Metropolitan Area</span><span>Content adapted from public LinkedIn profile</span>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script="" data-props="{&quot;$preview&quot;:{&quot;width&quot;:1440,&quot;height&quot;:6600}}">
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      metrics: [{v:"$0 → 8-figure",l:"Marketplace revenue scaled"},{v:"+47%",l:"Marketing efficiency (MER) lift"},{v:"+20%",l:"Activation & premium adoption (SaaS)"},{v:"+77%",l:"Med-tech revenue growth"}],
+      expertise: [
+        {n:"01",t:"Product Marketing & Positioning",d:"Segmentation, value props, messaging frameworks, packaging, and competitive intelligence that sharpen differentiation."},
+        {n:"02",t:"AI-Driven Omnichannel GTM",d:"Full-funnel execution across paid social, SEM, influencer/UGC, affiliate, programmatic, SEO/ASO/AEO, and lifecycle."},
+        {n:"03",t:"Product-Led Growth & Lifecycle",d:"Onboarding optimization, activation, expansion, and retention loops embedded directly in the product experience."},
+        {n:"04",t:"Growth Analytics & MarTech",d:"GA4, MMP, CRM, CMS, MMM, incrementality testing, and experimentation systems for real attribution and faster learning."},
+        {n:"05",t:"Team Leadership & Scale",d:"Built and led PMM, growth, lifecycle, creative, content, and analytics teams plus agency partners with full P&L ownership."},
+        {n:"06",t:"0→1 Launches & Transformation",d:"From CPG mobile apps (Top 5 Lifestyle, Clio) to streaming, interactive TV, ecommerce, and second-screen experiences."}
+      ],
+      impact: [
+        {l:"Marketplace growth engine",m:"$0 → 8-figure",d:"Built an AI-enabled full-funnel engine at Platphorm; marketing drove 100% of portfolio revenue with consistent YoY growth."},
+        {l:"Efficiency at scale",m:"+47% MER",d:"Multimillion-dollar budget, data-driven media mix, AI creative and MMM to lift return on marketing investment."},
+        {l:"PLG in SaaS (Kareo)",m:"+20% activation",d:"Redesigned onboarding, simplified journeys, and bundled upsells to lift subscription activation and premium adoption."},
+        {l:"CPG mobile first (Kraft)",m:"Top 5 App Store",d:"First CPG-branded native iPhone/Android apps, ~90% CRM opt-in, Ad Age / Clio recognition, $3M incremental revenue."}
+      ],
+      roles: [
+        {t:"Fractional Product Marketing & GTM Advisor",c:"Vector CMO",w:"Feb 2026 – Present · Los Angeles, CA",b:["Fractional product marketing and GTM leadership for early- and growth-stage tech companies.","Partnering with founders and executive teams while pursuing a full-time executive leadership opportunity."]},
+        {t:"Vice President, Product Marketing & Strategy",c:"Platphorm, LLC",w:"Feb 2018 – Feb 2026 · 8 yrs · San Francisco, CA",b:["Scaled mobile + web marketplaces from $0 to 8-figure revenue; owned revenue-generation strategy end to end.","Improved MER 47% via media-mix optimization, incrementality testing, AI creative, and MMM.","Built/led PMM, growth, lifecycle, creative, content, analytics + agencies; owned multimillion-dollar budget.","Deployed modern MarTech (GA4, GTM, MMP, CRM, CMS) for real-time attribution and full-funnel visibility."]},
+        {t:"Director, Product Marketing & Strategy",c:"Platphorm, LLC",w:"Feb 2016 – Feb 2018 · 2 yrs · San Francisco, CA",b:["Led 0→1 launches; owned GTM across paid, owned, earned.","Built lifecycle programs (email/push/SMS) lifting conversion, engagement, retention, and win-back."]},
+        {t:"Senior Product / UX Designer",c:"Kareo",w:"May 2015 – Feb 2016 · San Francisco, CA",b:["Led 0→1 product vision for patient-engagement and practice-marketing SaaS.","+20% activation and premium adoption via onboarding redesign and bundled upsells."]},
+        {t:"Product + Digital Strategy Consultant",c:"Independent Consultant",w:"Jul 2009 – May 2015 · Los Angeles",b:["MaestroConference: +37% conversion via modular guided webinar flows.","SkinMedica: +12% retention / subscription ARR via repositioning and integrated marketing.","VCA/Antech SaaS: analytics + dashboard redesign for continuous optimization."]},
+        {t:"Client Partner / Account Director",c:"Meredith Xcelerated Marketing",w:"Dec 2006 – Jul 2009 · Los Angeles, CA",b:["Led Emerging Media practice for Warner Bros., Disney/ABC, Sony, Nestlé, Kraft (+$3M incremental).","Launched first CPG native apps (Top 5 Lifestyle, ~90% opt-in, Clio); ABC National Bingo Night drove 3M+ downloads."]},
+        {t:"Earlier leadership",c:"TANDBERG TV · UL · thinktank · KPMG · Kearney",w:"1998 – 2006 · Los Angeles / Chicago",b:["Interactive TV/VOD for CBS, CNN, Discovery, G4 (+33% engagement, GSN).","UL High Tech: +77% med-tech revenue via demand gen; CRM enablement for 5,000+ sellers.","Kearney: +42% coverage, +59% top-tier placements (WSJ, NYT, Businessweek)."]}
+      ],
+      edu: [{t:"Northwestern University",d:"Bachelor's degree, Communications"},{t:"General Assembly",d:"User Experience Design Immersive"},{t:"Honors",d:"CLIO Award · Ad Age recognition"}]
+    };
+  }
+}
+</script>
+
+
+</body></html>

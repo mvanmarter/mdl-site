@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<title>S3-05 · Slate hero</title>
+<script src="../assets/dc-runtime-a40c333009.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&amp;family=Source+Code+Pro:wght@500&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#ffffff}
+a{color:#2E5E8C}a:hover{color:#1B3C5C}
+</style>
+</helmet>
+<div style="font-family: 'Source Sans 3', system-ui, sans-serif; color: #22272D; background: #ffffff; font-size: 19px; line-height: 1.6">
+  <header style="background: linear-gradient(180deg, #8C949D 0%, #737B85 100%); color: #ffffff; overflow: hidden">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 22px 48px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 14px; border-bottom: 1px solid rgba(255,255,255,0.25)">
+      <div style="display: flex; align-items: center; gap: 10px; font-size: 14px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase">
+        <svg aria-hidden="true" width="30" height="22" sc-camel-view-box="0 0 30 22"><path d="M2 20 L10 6 L15 13 L20 4 L28 20 Z" fill="#ffffff"></path></svg>
+        Melanie de Leon
+      </div>
+      <nav aria-label="Primary" style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 28px; font-size: 13px; font-weight: 600; letter-spacing: 1.2px; text-transform: uppercase">
+        <a href="#about" style="color: #ffffff; text-decoration: none">About</a>
+        <a href="#expertise" style="color: #ffffff; text-decoration: none">Expertise</a>
+        <a href="#impact" style="color: #ffffff; text-decoration: none">Impact</a>
+        <a href="#experience" style="color: #ffffff; text-decoration: none">Experience</a>
+        <a href="#contact" style="color: #ffffff; text-decoration: none; border: 1.5px solid #ffffff; border-radius: 4px; padding: 8px 12px">Let's talk</a>
+      </nav>
+    </div>
+    <div style="max-width: 1200px; margin: 0 auto; padding: 0 48px; display: flex; flex-wrap: wrap; align-items: flex-end; gap: 32px">
+      <div style="flex: 1 1 520px; padding: 96px 0 104px">
+        <h1 style="margin: 0 0 26px; font-weight: 700; font-size: 66px; line-height: 1.08">AI-Driven<br>Go-to-Market</h1>
+        <p style="margin: 0; font-size: 23px; line-height: 1.5; max-width: 560px">Hello, I'm Melanie de Leon. I connect product, customer insight, and revenue outcomes — for SaaS, emerging tech, digital media, and Fortune 500 consumer companies.</p>
+      </div>
+      <img src="../assets/jpg-13bfa814f3.jpg" alt="Melanie de Leon" style="flex: 0 0 420px; width: 420px; height: 460px; object-fit: cover; object-position: center 20%; display: block; -webkit-mask-image: linear-gradient(180deg, #000 80%, transparent 100%); mask-image: linear-gradient(180deg, #000 80%, transparent 100%)">
+    </div>
+  </header>
+
+  <div style="max-width: 1200px; margin: 0 auto; padding: 64px 48px 0; display: flex; flex-wrap: wrap; gap: 48px 64px; align-items: flex-start">
+    <main style="flex: 999 1 600px; min-width: 0">
+      <p style="margin: 0 0 18px; font-size: 22px">Product marketing and growth leadership that embeds PLG and lifecycle into the product. Product strategy that translates complex tech into clear value props. Melanie works both sides of that loop.</p>
+      <p style="margin: 0 0 40px; font-size: 22px">Los Angeles Metropolitan Area · Open to VP Marketing / VP Product roles. <a href="mailto:deleon.melanie@gmail.com">Email Melanie</a>, <a href="https://www.linkedin.com/in/melaniedeleon">LinkedIn</a>, <a href="tel:+13107365993">310-736-5993</a>.</p>
+
+      <section aria-label="Headline metrics" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr)); gap: 20px; border-top: 1px solid #DDE1E5; border-bottom: 1px solid #DDE1E5; padding: 28px 0; margin-bottom: 64px">
+        <sc-for list="{{metrics}}" as="m" hint-placeholder-count="4"><div><div style="font-weight: 700; font-size: 32px; line-height: 1.15">{{m.v}}</div><div style="font-size: 15px; color: #59616A">{{m.l}}</div></div></sc-for>
+      </section>
+
+      <section id="about" style="margin-bottom: 64px">
+        <h2 style="margin: 0 0 16px; font-weight: 700; font-size: 36px; line-height: 1.15">Strategic, analytical, and creative — focused on what matters</h2>
+        <p style="margin: 0 0 16px">A rare combination of product marketing, growth leadership, and hands-on product strategy. Melanie embeds PLG and lifecycle optimization directly into the product experience and translates complex tech into clear value props.</p>
+        <p style="margin: 0 0 16px">Tenacious problem-solver who cuts through noise, focuses teams on outcomes, and rolls up her sleeves. Equally at home with Product, Engineering, Sales, and Operations.</p>
+        <p style="margin: 0">Through-line: digital product innovation — how breakthrough products are positioned, experienced, and adopted. Now focused on helping AI-driven products grow in signal-constrained ecosystems where precision, experimentation, and storytelling must work together.</p>
+      </section>
+
+      <section id="expertise" style="margin-bottom: 64px">
+        <h2 style="margin: 0 0 22px; font-weight: 700; font-size: 36px">What she brings to a VP role</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap: 24px 36px">
+          <sc-for list="{{expertise}}" as="e" hint-placeholder-count="6"><div><h3 style="margin: 0 0 4px; font-weight: 700; font-size: 20px">{{e.t}}</h3><p style="margin: 0; font-size: 17px; color: #3C434A">{{e.d}}</p></div></sc-for>
+        </div>
+      </section>
+
+      <section id="impact" style="margin-bottom: 64px">
+        <h2 style="margin: 0 0 22px; font-weight: 700; font-size: 36px">Results across SaaS, marketplaces, and Fortune 500</h2>
+        <sc-for list="{{impact}}" as="i" hint-placeholder-count="4"><div style="display: flex; flex-wrap: wrap; gap: 6px 28px; padding: 18px 0; border-top: 1px solid #DDE1E5"><div style="flex: 0 0 220px; font-weight: 700; font-size: 26px; color: #2E5E8C">{{i.m}}</div><div style="flex: 1 1 320px"><h3 style="margin: 0; font-weight: 700; font-size: 19px">{{i.l}}</h3><p style="margin: 2px 0 0; font-size: 17px; color: #3C434A">{{i.d}}</p></div></div></sc-for>
+      </section>
+
+      <section id="experience" style="margin-bottom: 64px">
+        <h2 style="margin: 0 0 4px; font-weight: 700; font-size: 36px">25+ years from consulting to VP</h2>
+        <p style="margin: 0 0 22px; color: #59616A">Full history in LinkedIn PDF. Highlights below — contact for resume.</p>
+        <sc-for list="{{roles}}" as="r" hint-placeholder-count="7"><article style="padding: 20px 0; border-top: 1px solid #DDE1E5"><div style="font-family: 'Source Code Pro', monospace; font-size: 13px; color: #59616A">{{r.w}}</div><h3 style="margin: 4px 0 0; font-weight: 700; font-size: 22px">{{r.t}}</h3><div style="color: #2E5E8C; font-weight: 600">{{r.c}}</div><ul style="margin: 8px 0 0; padding-left: 20px; font-size: 17px; color: #3C434A"><sc-for list="{{r.b}}" as="x" hint-placeholder-count="2"><li>{{x}}</li></sc-for></ul></article></sc-for>
+      </section>
+    </main>
+
+    <aside style="flex: 1 1 280px; display: flex; flex-direction: column; gap: 36px">
+      <section>
+        <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 10px"><span aria-hidden="true" style="width: 40px; height: 40px; border-radius: 50%; background: conic-gradient(#E86A3A 0 30%, #C73E8C 30% 60%, #7A4BD8 60% 85%, #E8E8E8 85%); -webkit-mask: radial-gradient(circle, transparent 11px, #000 12px); mask: radial-gradient(circle, transparent 11px, #000 12px)"></span><span style="font-family: 'Source Code Pro', monospace; font-weight: 500; font-size: 22px">open_to_vp</span></div>
+        <p style="margin: 0; font-size: 17px; color: #3C434A">In 2026 Melanie began fractional product marketing and GTM work at Vector CMO while pursuing a full-time executive leadership role.</p>
+      </section>
+      <section>
+        <h2 style="margin: 0 0 8px; font-weight: 700; font-size: 18px">Consumer, media &amp; tech brands led</h2>
+        <p style="margin: 0; font-size: 16px; color: #3C434A">Warner Bros., Disney/ABC, Sony Pictures, CBS, CNN, Discovery, HSN, Kraft, Nestlé, GSN, G4</p>
+      </section>
+      <section>
+        <h2 style="margin: 0 0 8px; font-weight: 700; font-size: 18px">Specialties</h2>
+        <div style="display: flex; flex-wrap: wrap; gap: 6px"><sc-for list="{{tags}}" as="t" hint-placeholder-count="8"><span style="background: #EEF1F4; font-size: 14px; padding: 3px 10px; border-radius: 4px">{{t}}</span></sc-for></div>
+      </section>
+      <section id="praise">
+        <h2 style="margin: 0 0 10px; font-weight: 700; font-size: 18px">Trusted by engineering and executive partners</h2>
+        <blockquote style="margin: 0 0 4px; font-size: 17px">“From an engineering perspective she was one of my favorite cross-functional partners.”</blockquote>
+        <p style="margin: 0 0 14px; font-size: 14px; color: #59616A">Jim Edelstein · Engineering partner · Platphorm, ~10 years</p>
+        <blockquote style="margin: 0 0 4px; font-size: 17px">“Melanie raises the bar on clarity, accountability, and execution across complex teams.”</blockquote>
+        <p style="margin: 0 0 10px; font-size: 14px; color: #59616A">Dan Sava · Cross-functional executive</p>
+        <p style="margin: 0; font-size: 14px; color: #59616A">Sourced from public LinkedIn recommendations. <a href="https://www.linkedin.com/in/melaniedeleon">Full profile</a></p>
+      </section>
+      <section>
+        <h2 style="margin: 0 0 8px; font-weight: 700; font-size: 18px">Foundation</h2>
+        <sc-for list="{{edu}}" as="d" hint-placeholder-count="3"><p style="margin: 0 0 8px; font-size: 16px"><strong>{{d.t}}</strong><br>{{d.d}}</p></sc-for>
+      </section>
+    </aside>
+  </div>
+
+  <section id="contact" style="background: #737B85; color: #ffffff; padding: 88px 48px; margin-top: 32px">
+    <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 24px 64px; align-items: center">
+      <div style="flex: 1 1 520px">
+        <h2 style="margin: 0 0 12px; font-weight: 700; font-size: 46px; line-height: 1.1">Seeking VP Marketing / VP Product roles</h2>
+        <p style="margin: 0 0 12px">SaaS, marketplaces, emerging tech, and consumer platforms. AI-driven GTM, PLG, and lifecycle — with full revenue accountability.</p>
+        <p style="margin: 0"><strong>Let's talk about your next stage of growth.</strong> Email is fastest. Based in Los Angeles Metropolitan Area.</p>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 10px; font-weight: 600">
+        <a href="mailto:deleon.melanie@gmail.com" style="background: #ffffff; color: #22272D; text-decoration: none; padding: 13px 22px; border-radius: 4px">deleon.melanie@gmail.com</a>
+        <a href="tel:+13107365993" style="color: #ffffff">310-736-5993</a>
+        <a href="https://www.linkedin.com/in/melaniedeleon" style="color: #ffffff">linkedin.com/in/melaniedeleon</a>
+      </div>
+    </div>
+  </section>
+  <footer style="background: #22272D; color: #C9CED3; padding: 20px 48px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; font-size: 14px">
+    <span>© 2026 Melanie de Leon · Los Angeles Metropolitan Area</span><span>Content adapted from public LinkedIn profile</span>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script="" data-props="{&quot;$preview&quot;:{&quot;width&quot;:1440,&quot;height&quot;:6400}}">
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      metrics: [{v:"$0 → 8-figure",l:"Marketplace revenue scaled"},{v:"+47%",l:"Marketing efficiency (MER) lift"},{v:"+20%",l:"Activation & premium adoption (SaaS)"},{v:"+77%",l:"Med-tech revenue growth"}],
+      tags: ["Consumer Product Marketing","Media Buying","Social Media Optimization","PLG","Lifecycle","GTM Strategy","MarTech","MMM"],
+      expertise: [
+        {n:"01",t:"Product Marketing & Positioning",d:"Segmentation, value props, messaging frameworks, packaging, and competitive intelligence that sharpen differentiation."},
+        {n:"02",t:"AI-Driven Omnichannel GTM",d:"Full-funnel execution across paid social, SEM, influencer/UGC, affiliate, programmatic, SEO/ASO/AEO, and lifecycle."},
+        {n:"03",t:"Product-Led Growth & Lifecycle",d:"Onboarding optimization, activation, expansion, and retention loops embedded directly in the product experience."},
+        {n:"04",t:"Growth Analytics & MarTech",d:"GA4, MMP, CRM, CMS, MMM, incrementality testing, and experimentation systems for real attribution and faster learning."},
+        {n:"05",t:"Team Leadership & Scale",d:"Built and led PMM, growth, lifecycle, creative, content, and analytics teams plus agency partners with full P&L ownership."},
+        {n:"06",t:"0→1 Launches & Transformation",d:"From CPG mobile apps (Top 5 Lifestyle, Clio) to streaming, interactive TV, ecommerce, and second-screen experiences."}
+      ],
+      impact: [
+        {l:"Marketplace growth engine",m:"$0 → 8-figure",d:"Built an AI-enabled full-funnel engine at Platphorm; marketing drove 100% of portfolio revenue with consistent YoY growth."},
+        {l:"Efficiency at scale",m:"+47% MER",d:"Multimillion-dollar budget, data-driven media mix, AI creative and MMM to lift return on marketing investment."},
+        {l:"PLG in SaaS (Kareo)",m:"+20% activation",d:"Redesigned onboarding, simplified journeys, and bundled upsells to lift subscription activation and premium adoption."},
+        {l:"CPG mobile first (Kraft)",m:"Top 5 App Store",d:"First CPG-branded native iPhone/Android apps, ~90% CRM opt-in, Ad Age / Clio recognition, $3M incremental revenue."}
+      ],
+      roles: [
+        {t:"Fractional Product Marketing & GTM Advisor",c:"Vector CMO",w:"Feb 2026 – Present · Los Angeles, CA",b:["Fractional product marketing and GTM leadership for early- and growth-stage tech companies.","Partnering with founders and executive teams while pursuing a full-time executive leadership opportunity."]},
+        {t:"Vice President, Product Marketing & Strategy",c:"Platphorm, LLC",w:"Feb 2018 – Feb 2026 · 8 yrs · San Francisco, CA",b:["Scaled mobile + web marketplaces from $0 to 8-figure revenue; owned revenue-generation strategy end to end.","Improved MER 47% via media-mix optimization, incrementality testing, AI creative, and MMM.","Built/led PMM, growth, lifecycle, creative, content, analytics + agencies; owned multimillion-dollar budget.","Deployed modern MarTech (GA4, GTM, MMP, CRM, CMS) for real-time attribution and full-funnel visibility."]},
+        {t:"Director, Product Marketing & Strategy",c:"Platphorm, LLC",w:"Feb 2016 – Feb 2018 · 2 yrs · San Francisco, CA",b:["Led 0→1 launches; owned GTM across paid, owned, earned.","Built lifecycle programs (email/push/SMS) lifting conversion, engagement, retention, and win-back."]},
+        {t:"Senior Product / UX Designer",c:"Kareo",w:"May 2015 – Feb 2016 · San Francisco, CA",b:["Led 0→1 product vision for patient-engagement and practice-marketing SaaS.","+20% activation and premium adoption via onboarding redesign and bundled upsells."]},
+        {t:"Product + Digital Strategy Consultant",c:"Independent Consultant",w:"Jul 2009 – May 2015 · Los Angeles",b:["MaestroConference: +37% conversion via modular guided webinar flows.","SkinMedica: +12% retention / subscription ARR via repositioning and integrated marketing.","VCA/Antech SaaS: analytics + dashboard redesign for continuous optimization."]},
+        {t:"Client Partner / Account Director",c:"Meredith Xcelerated Marketing",w:"Dec 2006 – Jul 2009 · Los Angeles, CA",b:["Led Emerging Media practice for Warner Bros., Disney/ABC, Sony, Nestlé, Kraft (+$3M incremental).","Launched first CPG native apps (Top 5 Lifestyle, ~90% opt-in, Clio); ABC National Bingo Night drove 3M+ downloads."]},
+        {t:"Earlier leadership",c:"TANDBERG TV · UL · thinktank · KPMG · Kearney",w:"1998 – 2006 · Los Angeles / Chicago",b:["Interactive TV/VOD for CBS, CNN, Discovery, G4 (+33% engagement, GSN).","UL High Tech: +77% med-tech revenue via demand gen; CRM enablement for 5,000+ sellers.","Kearney: +42% coverage, +59% top-tier placements (WSJ, NYT, Businessweek)."]}
+      ],
+      edu: [{t:"Northwestern University",d:"Bachelor's degree, Communications"},{t:"General Assembly",d:"User Experience Design Immersive"},{t:"Honors",d:"CLIO Award · Ad Age recognition"}]
+    };
+  }
+}
+</script>
+
+
+</body></html>
