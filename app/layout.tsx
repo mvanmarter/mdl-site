@@ -26,6 +26,7 @@ export default function RootLayout({
     <html lang="en" data-theme="executive" suppressHydrationWarning>
       <body
         className={`${sans.variable} ${display.variable} min-h-full antialiased`}
+        suppressHydrationWarning
       >
         {children}
       </body>
