@@ -243,7 +243,7 @@ export function Testimonials() {
         </div>
         <p className="mt-4 text-xs text-[var(--foreground)]/55">
           Sourced from public LinkedIn recommendations. Full profile:{" "}
-          <a className="underline" href={site.linkedin}>
+          <a className="underline" href={site.linkedin} target="_blank">
             linkedin.com/in/melaniedeleon
           </a>
         </p>

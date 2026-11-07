@@ -74,7 +74,7 @@ export function Footer() {
           </a>
           &nbsp;&nbsp;|&nbsp;&nbsp; Content adapted from public LinkedIn profile
           ·{" "}
-          <a className="underline" href={site.linkedin}>
+          <a className="underline" href={site.linkedin} target="_blank">
             Source
           </a>
         </p>
