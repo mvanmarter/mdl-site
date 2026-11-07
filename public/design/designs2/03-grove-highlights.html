@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<title>S2-03 · Grove highlights</title>
+<script src="../assets/dc-runtime-a40c333009.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<style>/* cyrillic-ext */
+@font-face {
+  font-family: 'Arimo';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/arimo/v36/P5sMzZCDf9_T_10UxCFuj5-v6dg.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Arimo';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/arimo/v36/P5sMzZCDf9_T_10dxCFuj5-v6dg.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Arimo';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/arimo/v36/P5sMzZCDf9_T_10VxCFuj5-v6dg.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Arimo';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/arimo/v36/P5sMzZCDf9_T_10axCFuj5-v6dg.woff2) format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* hebrew */
+@font-face {
+  font-family: 'Arimo';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/arimo/v36/P5sMzZCDf9_T_10bxCFuj5-v6dg.woff2) format('woff2');
+  unicode-range: U+0307-0308, U+0590-05FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Arimo';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/arimo/v36/P5sMzZCDf9_T_10WxCFuj5-v6dg.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Arimo';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/arimo/v36/P5sMzZCDf9_T_10XxCFuj5-v6dg.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Arimo';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../assets/woff2-f60dfe806d.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Arimo';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/arimo/v36/P5sMzZCDf9_T_10UxCFuj5-v6dg.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Arimo';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/arimo/v36/P5sMzZCDf9_T_10dxCFuj5-v6dg.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Arimo';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/arimo/v36/P5sMzZCDf9_T_10VxCFuj5-v6dg.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Arimo';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/arimo/v36/P5sMzZCDf9_T_10axCFuj5-v6dg.woff2) format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* hebrew */
+@font-face {
+  font-family: 'Arimo';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/arimo/v36/P5sMzZCDf9_T_10bxCFuj5-v6dg.woff2) format('woff2');
+  unicode-range: U+0307-0308, U+0590-05FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Arimo';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/arimo/v36/P5sMzZCDf9_T_10WxCFuj5-v6dg.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Arimo';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/arimo/v36/P5sMzZCDf9_T_10XxCFuj5-v6dg.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Arimo';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../assets/woff2-f60dfe806d.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/quicksand/v37/6xKtdSZaM9iE8KbpRA_hJFQNYuDyP7bh.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/quicksand/v37/6xKtdSZaM9iE8KbpRA_hJVQNYuDyP7bh.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/quicksand/v37/6xKtdSZaM9iE8KbpRA_hK1QNYuDyPw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/quicksand/v37/6xKtdSZaM9iE8KbpRA_hJFQNYuDyP7bh.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/quicksand/v37/6xKtdSZaM9iE8KbpRA_hJVQNYuDyP7bh.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/quicksand/v37/6xKtdSZaM9iE8KbpRA_hK1QNYuDyPw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<style>
+body{margin:0;background:#ffffff}
+a{color:#1E1E1E}a:hover{color:#3E6B33}
+</style>
+</helmet>
+<div style="font-family: Arimo, Helvetica, Arial, sans-serif; color: #1E1E1E; background: #ffffff; font-size: 17px; line-height: 1.55">
+  <header style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; padding: 14px 40px">
+    <div>
+      <div style="font-family: Quicksand, sans-serif; font-weight: 700; font-size: 30px; color: #4E7A41; line-height: 1.1">Melanie de Leon</div>
+      <div style="font-size: 15px; color: #1E1E1E">VP Marketing &amp; Product</div>
+    </div>
+    <nav aria-label="Primary" style="display: flex; flex-wrap: wrap; gap: 8px 22px; align-items: center; font-weight: 700; font-size: 15px">
+      <a href="#about" style="text-decoration: none">About</a>
+      <a href="#expertise" style="text-decoration: none">Expertise</a>
+      <a href="#experience" style="text-decoration: none">Experience</a>
+      <a href="#praise" style="text-decoration: none">Praise</a>
+      <a href="#contact" style="text-decoration: none; display: flex; align-items: center; gap: 6px"><svg aria-hidden="true" width="16" height="16" sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 6h16M4 12h16M4 18h16"></path></svg>Contact</a>
+    </nav>
+  </header>
+  <div style="background: #D6EDD3; padding: 8px 40px; text-align: center; font-size: 15px">Open to <a href="#contact">VP Marketing / VP Product roles</a>! And, see the <a href="#impact">results across SaaS, marketplaces, and Fortune 500</a>!</div>
+
+  <section role="img" aria-label="Hero background: forest photo placeholder" style="background: linear-gradient(90deg, rgba(30,48,28,0.86) 0%, rgba(40,62,36,0.7) 60%, rgba(52,76,46,0.55) 100%), repeating-linear-gradient(160deg, #3D5A37 0 30px, #4A6B42 30px 52px, #344F30 52px 90px); color: #ffffff; padding: 72px 40px 80px">
+    <div style="max-width: 1040px; display: flex; flex-direction: column; gap: 28px">
+      <p style="margin: 0; font-weight: 700; font-size: 36px; line-height: 1.25">I build <span style="color: #F2D04B">AI-driven go-to-market engines</span><br>for SaaS, emerging tech, and consumer brands.</p>
+      <p style="margin: 0; font-weight: 700; font-size: 36px; line-height: 1.25">I connect <span style="color: #F2D04B">product, customer insight, and revenue.</span></p>
+      <p style="margin: 0; font-weight: 700; font-size: 36px; line-height: 1.25">I scale <span style="color: #F2D04B">PLG and lifecycle</span> inside the product.</p>
+      <h1 style="margin: 0; font-weight: 400; font-size: 21px; line-height: 1.45; max-width: 760px">Melanie de Leon — product marketing and growth leader for SaaS, emerging tech, digital media, and Fortune 500 consumer companies. Los Angeles Metropolitan Area.</h1>
+      <div style="display: flex; flex-wrap: wrap; gap: 12px 22px; align-items: center">
+        <a href="mailto:deleon.melanie@gmail.com" style="background: #F2D04B; color: #1E1E1E; text-decoration: none; font-weight: 700; padding: 13px 22px; border-radius: 4px">Email Melanie</a>
+        <a href="https://www.linkedin.com/in/melaniedeleon" style="color: #ffffff; font-weight: 700">LinkedIn</a>
+        <a href="tel:+13107365993" style="color: #ffffff; font-weight: 700">310-736-5993</a>
+      </div>
+    </div>
+  </section>
+
+  <main style="max-width: 1180px; margin: 0 auto; padding: 72px 40px; display: flex; flex-direction: column; gap: 48px">
+    <section aria-label="Headline metrics" style="background: #EEF4EE; padding: 32px 36px">
+      <span style="display: inline-block; background: #7D4E8C; color: #ffffff; font-size: 14px; padding: 5px 10px; text-transform: uppercase; margin-bottom: 18px">Headline metrics</span>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(220px, 100%), 1fr)); gap: 24px">
+        <sc-for list="{{metrics}}" as="m" hint-placeholder-count="4">
+          <div><div style="font-weight: 700; font-size: 34px; color: #2F5326">{{m.v}}</div><div style="font-size: 15px">{{m.l}}</div></div>
+        </sc-for>
+      </div>
+      <p style="margin: 24px 0 0; font-size: 15px"><strong>Consumer, media &amp; tech brands led:</strong> Warner Bros., Disney/ABC, Sony Pictures, CBS, CNN, Discovery, HSN, Kraft, Nestlé, GSN, G4</p>
+    </section>
+
+    <section id="about" style="display: flex; flex-wrap: wrap; gap: 32px 48px">
+      <div style="flex: 1 1 520px">
+        <h2 style="margin: 0 0 16px; font-weight: 700; font-size: 34px; line-height: 1.2">Strategic, analytical, and creative — focused on what matters</h2>
+        <p style="margin: 0 0 14px">A rare combination of product marketing, growth leadership, and hands-on product strategy. Melanie embeds PLG and lifecycle optimization directly into the product experience and translates complex tech into clear value props.</p>
+        <p style="margin: 0 0 14px">Tenacious problem-solver who cuts through noise, focuses teams on outcomes, and rolls up her sleeves. Equally at home with Product, Engineering, Sales, and Operations.</p>
+        <p style="margin: 0">Through-line: digital product innovation — how breakthrough products are positioned, experienced, and adopted. Now focused on helping AI-driven products grow in signal-constrained ecosystems where precision, experimentation, and storytelling must work together.</p>
+      </div>
+      <div style="flex: 0 1 360px; display: flex; flex-direction: column; gap: 16px">
+        <div role="img" aria-label="Headshot placeholder" style="height: 300px; background: #1F3A23; color: #C9D9C5; display: flex; align-items: center; justify-content: center; font-size: 12px; letter-spacing: 2px">HEADSHOT</div>
+        <div style="display: flex; flex-wrap: wrap; gap: 8px">
+          <sc-for list="{{tags}}" as="t" hint-placeholder-count="8"><span style="background: #D6EDD3; padding: 4px 10px; font-size: 14px">{{t}}</span></sc-for>
+        </div>
+      </div>
+    </section>
+
+    <section id="expertise" style="background: #EEF4EE; padding: 40px 36px">
+      <span style="display: inline-block; background: #7D4E8C; color: #ffffff; font-size: 14px; padding: 5px 10px; text-transform: uppercase; margin-bottom: 14px">Expertise</span>
+      <h2 style="margin: 0 0 28px; font-weight: 700; font-size: 34px">What she brings to a VP role</h2>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr)); gap: 20px">
+        <sc-for list="{{expertise}}" as="e" hint-placeholder-count="6">
+          <div style="background: #ffffff; padding: 22px">
+            <h3 style="margin: 0 0 6px; font-size: 19px"><span style="background: linear-gradient(transparent 60%, #F7E49A 60%)">{{e.t}}</span></h3>
+            <p style="margin: 0; font-size: 15px">{{e.d}}</p>
+          </div>
+        </sc-for>
+      </div>
+    </section>
+
+    <section id="impact">
+      <h2 style="margin: 0 0 24px; font-weight: 700; font-size: 34px">Results across SaaS, marketplaces, and <span style="background: linear-gradient(transparent 60%, #F7E49A 60%)">Fortune 500</span></h2>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr)); gap: 20px">
+        <sc-for list="{{impact}}" as="i" hint-placeholder-count="4">
+          <div style="background: #1F3A23; color: #ffffff; padding: 24px">
+            <div style="font-size: 14px; color: #C9D9C5">{{i.l}}</div>
+            <div style="font-weight: 700; font-size: 28px; color: #F2D04B; margin: 8px 0">{{i.m}}</div>
+            <p style="margin: 0; font-size: 15px; color: #E8EFE6">{{i.d}}</p>
+          </div>
+        </sc-for>
+      </div>
+    </section>
+
+    <section id="experience" style="background: #EEF4EE; padding: 40px 36px">
+      <span style="display: inline-block; background: #7D4E8C; color: #ffffff; font-size: 14px; padding: 5px 10px; text-transform: uppercase; margin-bottom: 14px">Experience</span>
+      <h2 style="margin: 0 0 4px; font-weight: 700; font-size: 34px">25+ years from consulting to VP</h2>
+      <p style="margin: 0 0 28px">Full history in LinkedIn PDF. Highlights below — contact for resume.</p>
+      <div style="display: flex; flex-direction: column; gap: 16px">
+        <sc-for list="{{roles}}" as="r" hint-placeholder-count="7">
+          <article style="background: #ffffff; padding: 22px 24px">
+            <h3 style="margin: 0; font-size: 19px">{{r.t}}</h3>
+            <div style="font-size: 15px"><strong style="color: #2F5326">{{r.c}}</strong> · {{r.w}}</div>
+            <ul style="margin: 8px 0 0; padding-left: 20px; font-size: 15px">
+              <sc-for list="{{r.b}}" as="x" hint-placeholder-count="2"><li style="margin-bottom: 3px">{{x}}</li></sc-for>
+            </ul>
+          </article>
+        </sc-for>
+      </div>
+    </section>
+
+    <section id="praise">
+      <h2 style="margin: 0 0 24px; font-weight: 700; font-size: 34px">Trusted by engineering and executive partners</h2>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(420px, 100%), 1fr)); gap: 20px">
+        <figure style="margin: 0; border: 2px solid #D6EDD3; padding: 26px">
+          <blockquote style="margin: 0; font-weight: 700; font-size: 21px; line-height: 1.4">“From an engineering perspective she was one of my favorite <span style="background: linear-gradient(transparent 60%, #F7E49A 60%)">cross-functional partners</span>.”</blockquote>
+          <figcaption style="margin-top: 12px; font-size: 15px">Jim Edelstein · Engineering partner · Platphorm, ~10 years</figcaption>
+        </figure>
+        <figure style="margin: 0; border: 2px solid #D6EDD3; padding: 26px">
+          <blockquote style="margin: 0; font-weight: 700; font-size: 21px; line-height: 1.4">“Melanie raises the bar on <span style="background: linear-gradient(transparent 60%, #F7E49A 60%)">clarity, accountability, and execution</span> across complex teams.”</blockquote>
+          <figcaption style="margin-top: 12px; font-size: 15px">Dan Sava · Cross-functional executive</figcaption>
+        </figure>
+      </div>
+      <p style="margin: 16px 0 0; font-size: 14px">Sourced from public LinkedIn recommendations. Full profile: <a href="https://www.linkedin.com/in/melaniedeleon">linkedin.com/in/melaniedeleon</a></p>
+    </section>
+
+    <section>
+      <h2 style="margin: 0 0 16px; font-weight: 700; font-size: 26px">Foundation</h2>
+      <div style="display: flex; flex-wrap: wrap; gap: 16px 48px">
+        <sc-for list="{{edu}}" as="d" hint-placeholder-count="3"><div><strong>{{d.t}}</strong><br>{{d.d}}</div></sc-for>
+      </div>
+    </section>
+  </main>
+
+  <section id="contact" style="background: #1F3A23; color: #ffffff; padding: 72px 40px">
+    <div style="max-width: 1100px; margin: 0 auto; display: flex; flex-direction: column; gap: 14px">
+      <h2 style="margin: 0; font-weight: 700; font-size: 40px; line-height: 1.2">Seeking <span style="color: #F2D04B">VP Marketing / VP Product</span> roles</h2>
+      <p style="margin: 0; font-size: 19px; max-width: 760px">SaaS, marketplaces, emerging tech, and consumer platforms. AI-driven GTM, PLG, and lifecycle — with full revenue accountability.</p>
+      <h3 style="margin: 16px 0 0; font-size: 21px">Let's talk about your next stage of growth</h3>
+      <p style="margin: 0">Email is fastest. Based in Los Angeles Metropolitan Area.</p>
+      <div style="display: flex; flex-wrap: wrap; gap: 12px 22px; align-items: center; margin-top: 6px">
+        <a href="mailto:deleon.melanie@gmail.com" style="background: #F2D04B; color: #1E1E1E; text-decoration: none; font-weight: 700; padding: 13px 22px; border-radius: 4px">deleon.melanie@gmail.com</a>
+        <a href="tel:+13107365993" style="color: #ffffff">310-736-5993</a>
+        <a href="https://www.linkedin.com/in/melaniedeleon" style="color: #ffffff">linkedin.com/in/melaniedeleon</a>
+      </div>
+    </div>
+  </section>
+  <footer style="padding: 22px 40px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; font-size: 14px">
+    <span>© 2026 Melanie de Leon · Los Angeles Metropolitan Area</span><span>Content adapted from public LinkedIn profile</span>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script="" data-props="{&quot;$preview&quot;:{&quot;width&quot;:1440,&quot;height&quot;:6600}}">
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      metrics: [{v:"$0 → 8-figure",l:"Marketplace revenue scaled"},{v:"+47%",l:"Marketing efficiency (MER) lift"},{v:"+20%",l:"Activation & premium adoption (SaaS)"},{v:"+77%",l:"Med-tech revenue growth"}],
+      tags: ["Consumer Product Marketing","Media Buying","Social Media Optimization","PLG","Lifecycle","GTM Strategy","MarTech","MMM"],
+      expertise: [
+        {n:"01",t:"Product Marketing & Positioning",d:"Segmentation, value props, messaging frameworks, packaging, and competitive intelligence that sharpen differentiation."},
+        {n:"02",t:"AI-Driven Omnichannel GTM",d:"Full-funnel execution across paid social, SEM, influencer/UGC, affiliate, programmatic, SEO/ASO/AEO, and lifecycle."},
+        {n:"03",t:"Product-Led Growth & Lifecycle",d:"Onboarding optimization, activation, expansion, and retention loops embedded directly in the product experience."},
+        {n:"04",t:"Growth Analytics & MarTech",d:"GA4, MMP, CRM, CMS, MMM, incrementality testing, and experimentation systems for real attribution and faster learning."},
+        {n:"05",t:"Team Leadership & Scale",d:"Built and led PMM, growth, lifecycle, creative, content, and analytics teams plus agency partners with full P&L ownership."},
+        {n:"06",t:"0→1 Launches & Transformation",d:"From CPG mobile apps (Top 5 Lifestyle, Clio) to streaming, interactive TV, ecommerce, and second-screen experiences."}
+      ],
+      impact: [
+        {l:"Marketplace growth engine",m:"$0 → 8-figure",d:"Built an AI-enabled full-funnel engine at Platphorm; marketing drove 100% of portfolio revenue with consistent YoY growth."},
+        {l:"Efficiency at scale",m:"+47% MER",d:"Multimillion-dollar budget, data-driven media mix, AI creative and MMM to lift return on marketing investment."},
+        {l:"PLG in SaaS (Kareo)",m:"+20% activation",d:"Redesigned onboarding, simplified journeys, and bundled upsells to lift subscription activation and premium adoption."},
+        {l:"CPG mobile first (Kraft)",m:"Top 5 App Store",d:"First CPG-branded native iPhone/Android apps, ~90% CRM opt-in, Ad Age / Clio recognition, $3M incremental revenue."}
+      ],
+      roles: [
+        {t:"Fractional Product Marketing & GTM Advisor",c:"Vector CMO",w:"Feb 2026 – Present · Los Angeles, CA",b:["Fractional product marketing and GTM leadership for early- and growth-stage tech companies.","Partnering with founders and executive teams while pursuing a full-time executive leadership opportunity."]},
+        {t:"Vice President, Product Marketing & Strategy",c:"Platphorm, LLC",w:"Feb 2018 – Feb 2026 · 8 yrs · San Francisco, CA",b:["Scaled mobile + web marketplaces from $0 to 8-figure revenue; owned revenue-generation strategy end to end.","Improved MER 47% via media-mix optimization, incrementality testing, AI creative, and MMM.","Built/led PMM, growth, lifecycle, creative, content, analytics + agencies; owned multimillion-dollar budget.","Deployed modern MarTech (GA4, GTM, MMP, CRM, CMS) for real-time attribution and full-funnel visibility."]},
+        {t:"Director, Product Marketing & Strategy",c:"Platphorm, LLC",w:"Feb 2016 – Feb 2018 · 2 yrs · San Francisco, CA",b:["Led 0→1 launches; owned GTM across paid, owned, earned.","Built lifecycle programs (email/push/SMS) lifting conversion, engagement, retention, and win-back."]},
+        {t:"Senior Product / UX Designer",c:"Kareo",w:"May 2015 – Feb 2016 · San Francisco, CA",b:["Led 0→1 product vision for patient-engagement and practice-marketing SaaS.","+20% activation and premium adoption via onboarding redesign and bundled upsells."]},
+        {t:"Product + Digital Strategy Consultant",c:"Independent Consultant",w:"Jul 2009 – May 2015 · Los Angeles",b:["MaestroConference: +37% conversion via modular guided webinar flows.","SkinMedica: +12% retention / subscription ARR via repositioning and integrated marketing.","VCA/Antech SaaS: analytics + dashboard redesign for continuous optimization."]},
+        {t:"Client Partner / Account Director",c:"Meredith Xcelerated Marketing",w:"Dec 2006 – Jul 2009 · Los Angeles, CA",b:["Led Emerging Media practice for Warner Bros., Disney/ABC, Sony, Nestlé, Kraft (+$3M incremental).","Launched first CPG native apps (Top 5 Lifestyle, ~90% opt-in, Clio); ABC National Bingo Night drove 3M+ downloads."]},
+        {t:"Earlier leadership",c:"TANDBERG TV · UL · thinktank · KPMG · Kearney",w:"1998 – 2006 · Los Angeles / Chicago",b:["Interactive TV/VOD for CBS, CNN, Discovery, G4 (+33% engagement, GSN).","UL High Tech: +77% med-tech revenue via demand gen; CRM enablement for 5,000+ sellers.","Kearney: +42% coverage, +59% top-tier placements (WSJ, NYT, Businessweek)."]}
+      ],
+      edu: [{t:"Northwestern University",d:"Bachelor's degree, Communications"},{t:"General Assembly",d:"User Experience Design Immersive"},{t:"Honors",d:"CLIO Award · Ad Age recognition"}]
+    };
+  }
+}
+</script>
+
+
+</body></html>

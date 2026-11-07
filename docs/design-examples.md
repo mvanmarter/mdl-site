@@ -1,11 +1,13 @@
 # Design Examples
 
 ## My Personal Marketing Site
+
 https://mvanmarter.github.io/mdl-site/
 
 ## Example URLs
 
 ### reference/design1
+
 1. [Jonathan Stark](https://jonathanstark.com): Spare, centered, single column
 2. [Tom Critchlow](https://tomcritchlow.com): Sidebar nav, writing-first
 3. [Laura Busche](https://laurabusche.com): Moody photo hero, editorial type
@@ -20,6 +22,7 @@ https://mvanmarter.github.io/mdl-site/
 12. [Dara Denney](https://www.daradenney.com): Large italic serif headline, framed page
 
 ### reference/design2
+
 1. [Lara Hogan](https://larahogan.me): Management coach
 2. [Steve Portigal](https://portigal.com): User research consultant
 3. [Indi Young](https://indiyoung.com): Research coach and consultant
@@ -32,3 +35,18 @@ https://mvanmarter.github.io/mdl-site/
 10. [Ethan Marcotte](https://ethanmarcotte.com): Independent web designer
 11. [Justin Welsh](https://www.justinwelsh.me): Solopreneur, courses and newsletter
 12. [Harry Brignull](https://www.brignull.com): Expert witness and UX consultant
+
+### reference/design3
+
+1. [Brad Frost](https://bradfrost.com): Design system consultant
+2. [Dan Mall](https://danmall.com): Design systems teacher and consultant
+3. [Ryan Singer](https://www.ryansinger.co): Shape Up product process consultant
+4. [Rich Mironov](https://www.mironov.com): Interim product executive and coach
+5. [Jorge Arango](https://jarango.com): Information architecture consultant
+6. [Abby Covert](https://abbycovert.com): Information architect and teacher
+7. [Christina Wodtke](https://eleganthack.com): OKR coach, author and educator
+8. [Sara Wachter-Boettcher](https://sarawb.com): Leadership coach for design and tech
+9. [Sarah Doody](https://www.sarahdoody.com): UX career coach
+10. [Paul Millerd](https://pathlesspath.com): Writer and ex-strategy consultant
+11. [Ann Handley](https://annhandley.com): Marketing writer and keynote speaker
+12. [Jane Portman](https://uibreakfast.com): UI/UX consultant for SaaS
