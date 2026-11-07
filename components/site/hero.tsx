@@ -18,14 +18,14 @@ function Headshot() {
     return (
       <div
         aria-label={`${site.name} photo placeholder`}
-        className="flex aspect-[4/5] w-full items-center justify-center rounded-3xl bg-[var(--brand)] text-[var(--brand-ink)]"
+        className="flex mx-auto aspect-[4/5] w-[90%] items-center justify-center rounded-3xl bg-[var(--brand)] text-[var(--brand-ink)]"
       >
         <span className="font-display text-7xl font-semibold">ML</span>
       </div>
     );
   }
   return (
-    <div className="relative aspect-[4/5] w-full overflow-hidden rounded-3xl border border-[var(--line)] bg-[var(--surface)]">
+    <div className="relative mx-auto aspect-[4/5] w-[90%] overflow-hidden rounded-3xl border border-[var(--line)] bg-[var(--surface)]">
       <Image
         src={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/headshot.png`}
         alt={site.name}
@@ -79,17 +79,28 @@ export function Hero() {
               <Phone size={16} /> {site.phone}
             </a>
           </div>
-          <dl className="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-4">
+          <dl className="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-[1.4fr_1fr_1fr_1fr]">
             {stats.map((s) => (
               <div
                 key={s.label}
-                className="rounded-2xl border border-[var(--line)] bg-white p-4"
+                className="flex flex-col rounded-2xl border border-[var(--line)] bg-white p-4"
               >
-                <dt className="order-2 mt-1 text-xs leading-snug text-[var(--foreground)]/60">
+                <dt className="order-2 mt-1 text-[13px] leading-snug text-[var(--foreground)]/75">
                   {s.label}
                 </dt>
-                <dd className="font-display text-2xl font-semibold">
-                  {s.value}
+                <dd className="whitespace-nowrap font-display text-2xl font-semibold">
+                  {s.value.split(" → ").map((part, i) => (
+                    <span key={part}>
+                      {i > 0 ? (
+                        <span
+                          className="mx-1 align-[0.1em] text-base font-normal"
+                        >
+                          →
+                        </span>
+                      ) : null}
+                      {part}
+                    </span>
+                  ))}
                 </dd>
               </div>
             ))}
@@ -97,10 +108,6 @@ export function Hero() {
         </div>
         <div>
           <Headshot />
-          <p className="mt-3 text-xs leading-relaxed text-[var(--foreground)]/55">
-            Photo placeholder — LinkedIn blocks direct photo reuse. Add{" "}
-            <code>public/headshot.jpg</code> to display the real portrait.
-          </p>
         </div>
       </div>
     </section>
